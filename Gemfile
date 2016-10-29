@@ -23,6 +23,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'sorcery'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -38,7 +39,16 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  
+end
+
+group :test do 
+  gem 'cucumber'
+  gem 'cucumber-rails',:require => false
+  gem 'capybara'
+  #gem 'capybara-webkit'
+  #gem 'database_cleaner'
+  #gem 'rspec', '~> 3.5'
+  gem 'rspec-rails'
 end
 
 group :development do
