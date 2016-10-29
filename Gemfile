@@ -45,8 +45,8 @@ group :test do
   gem 'cucumber'
   gem 'cucumber-rails',:require => false
   gem 'capybara'
-  #gem 'capybara-webkit'
-  #gem 'database_cleaner'
+  gem 'capybara-webkit'
+  gem 'database_cleaner'
   #gem 'rspec', '~> 3.5'
   gem 'rspec-rails'
 end
