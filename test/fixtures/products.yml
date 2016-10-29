@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome_produto: MyString
+  categoria: MyString
+  validade: 2016-10-29
+  preco: MyString
+  descricao_produto: MyText
+
+two:
+  nome_produto: MyString
+  categoria: MyString
+  validade: 2016-10-29
+  preco: MyString
+  descricao_produto: MyText
