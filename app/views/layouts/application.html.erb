@@ -58,11 +58,25 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <%= bootstrap_flash %>
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+            <% if current_user %>
+              <li><%= link_to "Edit Profile", edit_user_path(current_user.id) %></li>
+              <li><%= link_to "Logout", :logout, method: :post %></li>
+            </ul>
+            <% else %>
+            <ul class="nav navbar-nav">
+              <li><%= link_to "Register", new_user_path %>  </li>
+              <li><%= link_to "Login", :login %></li>
+            </ul>
+            <% end %>
+          </div>
+          
           <%= yield %>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-12">
          
         </div><!--/span-->
       </div><!--/row-->
