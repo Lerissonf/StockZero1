@@ -1,5 +1,5 @@
 require "spec_helper"
-require "login"
+require "signup"
 describe User do
     regex_number = /[0-9]/
     regex_letters = /[A-Za-z]/
