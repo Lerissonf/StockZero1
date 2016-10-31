@@ -6,7 +6,7 @@ describe User do
     regex_email = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
     
     
-    
+
     us=User.new
     
     it "Instance of user" do
@@ -27,3 +27,5 @@ describe User do
        
     end
 end
+
+       
